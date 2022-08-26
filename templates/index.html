@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Named Entity Finder</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<style>
+    #app {
+        max-width: 800px;
+    }
+
+</style>
+
+<body>
+    <div class="container p-3" id="app">
+        <div class="row my-4">
+            <h1 id="app-heading" data-test-id="heading">Named Entity Finder</h1>
+        </div>
+        <div class="row my-3">
+            <div id="labeled-doc" data-test-id="labeled-doc">
+            </div>
+        </div>
+
+        <div class="row my-3">
+            <div class="input-group">
+                <div class="input-group-prepend">
+                    <button class="btn btn-outline-primary" type="button" id="find-button" data-test-id="find-button">
+                        Find Named Entities
+                    </button>
+                </div>
+                <input id="input-text" data-test-id="input-text" class="form-control">
+            </div>
+        </div>
+        <div class="row my-3">
+            <table id="ner-table" data-test-id="ner-table" class="table table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>
+                            Entity
+                        </th>
+                        <th>
+                            Type
+                        </th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="static/ner.js"></script>
+
+</html>
